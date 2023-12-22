@@ -1,3 +1,7 @@
+
+const ARR:[usize;5] = [10,20,30,40,50];
+
+
 fn if_else_conditions() {
 
     let number: i32 = 8;
@@ -81,6 +85,37 @@ fn while_loop_train(){
     println!("YEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEES")
 }
 
+fn while_inside_an_array(){
+
+    let mut index  = 0;
+
+    while index < 5 {
+        println!("array[{}] = {}",index,ARR[index]);
+        index += 1;
+    }
+}
+
+fn for_loop_training(){
+
+
+    let mut index:i32 = 0;
+
+    for element in ARR {
+        println!("array[{}] = {}",index,element);
+        index +=1;
+    }
+
+}
+
+fn for_loop_with_rev(){
+    for number in (1..4).rev() {
+        println!("{}!",number)
+    }
+    println!("Yessssssssssssssssssss")
+}
+
+
+
 fn main() {
-    while_loop_train()
+    for_loop_with_rev()
 }
