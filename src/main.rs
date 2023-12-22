@@ -31,5 +31,30 @@ fn infinite_loop(){
 }
 
 fn main() {
-    infinite_loop()
+    compteur()
 }
+
+fn compteur(){
+    let mut compteur:i32 = 0;
+
+    'increment :loop {
+        println!("compteur: {}", compteur);
+        let mut restant:i32 = 10;
+
+        loop {
+            println!("restant: {}", restant);
+            if compteur == 3 {
+                break 'increment
+            }
+
+            if restant == 9{
+                break
+            }
+
+            restant -= 1
+        }
+        compteur += 1
+    }
+    println!("Le compteur est de {}",compteur)
+}
+
