@@ -58,3 +58,17 @@ fn compteur(){
     println!("Le compteur est de {}",compteur)
 }
 
+fn return_result_in_loop(){
+    let mut compteur : i32 = 0;
+
+    let result = loop {
+
+        compteur+=1;
+
+        if compteur == 10 {
+            break compteur*2
+        }
+
+    };
+    println!("Compteur : {}",result)
+}
