@@ -30,9 +30,6 @@ fn infinite_loop(){
     }
 }
 
-fn main() {
-    compteur()
-}
 
 fn compteur(){
     let mut compteur:i32 = 0;
@@ -71,4 +68,19 @@ fn return_result_in_loop(){
 
     };
     println!("Compteur : {}",result)
+}
+
+fn while_loop_train(){
+
+    let mut counter :i32 = 3;
+
+    while counter > 0 {
+        println!("{}",counter);
+        counter -= 1;
+    }
+    println!("YEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEES")
+}
+
+fn main() {
+    while_loop_train()
 }
