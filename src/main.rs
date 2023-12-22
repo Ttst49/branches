@@ -1,4 +1,4 @@
-fn main() {
+fn if_else_conditions() {
 
     let number: i32 = 8;
 
@@ -19,4 +19,17 @@ fn variable_if() {
     let nombre = if condition { 5 } else { 6 };
 
     println!("La valeur du nombre est : {}", nombre);
+}
+
+
+fn infinite_loop(){
+    loop {
+        println!("ahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh");
+        //commenter le break pour la rendre infinie
+        break
+    }
+}
+
+fn main() {
+    infinite_loop()
 }
