@@ -2,9 +2,9 @@
 const ARR:[usize;5] = [10,20,30,40,50];
 
 
-fn if_else_conditions() {
+pub fn if_else_conditions() {
 
-    let number: i32 = 8;
+    let number:i32 = 8;
 
 
     if number % 4 == 0 {
@@ -18,7 +18,7 @@ fn if_else_conditions() {
     }
 }
 
-fn variable_if() {
+pub fn variable_if() {
     let condition = true;
     let nombre = if condition { 5 } else { 6 };
 
@@ -26,7 +26,7 @@ fn variable_if() {
 }
 
 
-fn infinite_loop(){
+pub fn infinite_loop(){
     loop {
         println!("ahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh");
         //commenter le break pour la rendre infinie
@@ -35,7 +35,7 @@ fn infinite_loop(){
 }
 
 
-fn compteur(){
+pub fn compteur(){
     let mut compteur:i32 = 0;
 
     'increment :loop {
@@ -59,7 +59,7 @@ fn compteur(){
     println!("Le compteur est de {}",compteur)
 }
 
-fn return_result_in_loop(){
+pub fn return_result_in_loop(){
     let mut compteur : i32 = 0;
 
     let result = loop {
@@ -74,7 +74,7 @@ fn return_result_in_loop(){
     println!("Compteur : {}",result)
 }
 
-fn while_loop_train(){
+pub fn while_loop_train(){
 
     let mut counter :i32 = 3;
 
@@ -85,7 +85,7 @@ fn while_loop_train(){
     println!("YEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEES")
 }
 
-fn while_inside_an_array(){
+pub fn while_inside_an_array(){
 
     let mut index  = 0;
 
@@ -95,7 +95,7 @@ fn while_inside_an_array(){
     }
 }
 
-fn for_loop_training(){
+pub fn for_loop_training(){
 
 
     let mut index:i32 = 0;
